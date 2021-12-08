@@ -1,10 +1,10 @@
-# Segmente und Segmentdateien
-## Eine Einführung
+# epidat
+## names, dates, places
 
 presented by : Thomas Kollatz
 
-presented at : ITUG Jour-Fixe #6
+presented at : SfP 2021
 
-Zoom 2021-10-27
+Zoom 2021-12-09
 
-online: [https://ITUG.github.io/ITUGJF06/](https://ITUG.github.io/ITUGJF06/)
+online
