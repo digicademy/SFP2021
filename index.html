@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SfP 2021</title>
+        <!-- meta information -->
+        <meta name="author" content="Thomas Kollatz" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <!-- favicons -->
+        <link rel="shortcut icon" href="resources/img/favicon.png" />
+        <link rel="apple-touch-icon" href="resources/img/apple-touch-icon.png" />
+        <!-- CSS reset and grid -->
+        <link href="vendor/normalize/normalize-4.1.1.css" rel="stylesheet" />
+        <link href="vendor/skeleton/skeleton-2.0.4.css" rel="stylesheet" />
+        <!-- fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,600italic,400italic,700italic,800,800italic&amp;subset=latin,latin-ext"
+            rel="stylesheet" type="text/css" />
+        <!-- styles for included libraries -->
+        <!-- unite gallery -->
+        <link rel="stylesheet" href="vendor/unitegallery/css/unite-gallery.css" type="text/css" />
+        <!-- codemirror -->
+        <link rel="stylesheet" href="vendor/codemirror/lib/codemirror.css" />
+        <!-- highlight -->
+        <link rel="stylesheet" href="vendor/highlight/styles/default.css" />
+        <link rel="stylesheet" href="resources/css/hljs.linenumbering.css" />
+        <!-- swiper -->
+        <link rel="stylesheet" href="vendor/swiper/swiper.min.css" />
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup-1.1.0.css" />
+        <!-- standard presentation styles -->
+        <link href="resources/css/style.css" rel="stylesheet" />
+        <!-- custom presentation styles -->
+        <link href="resources/css/custom.css" rel="stylesheet" />
+        <!-- hint styles -->
+        <link href="resources/css/hint.css" rel="stylesheet" />
+        <!-- js needed in head -->
+        <!-- greuler -->
+        <script src="vendor/d3/d3-3.5.6.js"></script>
+        <script src="vendor/cola/cola.v3.min.js"></script>
+        <script src="vendor/greuler/greuler-0.5.5.min.js"></script>
+        <!-- html5 dataset shim for IE -->
+        <script src="vendor/impress/html5-dataset.js"></script>
+    </head>
+    <body>
+        <div class="fallback-message">
+            <p> Your browser <strong>doesn't support the features required</strong> by
+                impress.mod.js, so you are presented with a simplified version of this presentation. </p>
+            <p> For the best experience please use the latest <strong>Chrome</strong>,
+                    <strong>Safari</strong> or <strong>Firefox</strong> browser. </p>
+        </div>
+        <div id="impress">
+            <div class="step">
+                <h5><strong>2021-12-09</strong> ZOOM-Universe </h5>
+                <h5>
+                    <strong>Software for the Past
+                        <a href="http://www2.kinneret.ac.il/mjmay/sfp2021/" target="_blank">(SfP
+                            2021)</a>
+                    </strong>
+                </h5>
+                <h2 class="red down-100">Epidat</h2>
+                <h3 class=" down-25">names, dates, places</h3>
+                <h5 class="down-25"><a href="https://github.com/digicademy/SFP2021" target="_blank"
+                        >git</a> – <a
+                        href="http://www2.kinneret.ac.il/mjmay/sfp2021/sfp2021-abstracts.html#kollatz"
+                        target="_blank">abstract</a>
+                    <br />slides <a href="https://digicademy.github.io/SFP2021"
+                        title="View the presentation online"
+                        >https://digicademy.github.io/SFP2021</a><br /></h5>
+                <h6 style="color:gray">use spacebar to navigate slides</h6>
+                <h5 class="down-75">
+                    <strong>
+                        <a href="https://orcid.org/0000-0003-1904-1841" target="_blank">Thomas
+                            Kollatz</a>
+                    </strong><br />
+                    <a href="http://www.adwmainz.de/en/digitalitaet/digitale-akademie.html"
+                        target="_blank">Digital Academy</a>@<a
+                        href="http://www.adwmainz.de/en/home.html" target="_blank">Akademie der
+                        Wissenschaften und Literatur | Mainz</a>
+                    <br /><img src="resources/img/Twitter_bird_logo_2012.svg" alt="Twitter"
+                        class="twitter-icon" />
+                    <a href="https://twitter.com/kol_t" title="Thomas Kollatz on Twitter"
+                        target="_blank">@kol_t</a>
+                    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC-BY
+                        4.0</a>
+                </h5>
+            </div>
+            
+            <div class="step">
+                
+                        <h2 class="red medium">epidat – development </h2>
+                        <ul class="line-height-one-five small even-left">
+                            <li>2002 set up as a database in order to manage the inventarisation of
+                                about 6.000 headstones from the Ashkenazic Cemetery in
+                                <a
+                                    href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha&amp;release=beta&amp;lang=en"
+                                    target="_blank">Hamburg-Altona</a> (1621-1871)</li>
+                            <li>data ingest by a team of 10-12 researchers (server based via webforms)</li>
+                            
+                            <li>since 2006 online</li>
+                            <li>many projects followed – the ongoing development of epidat is driven by
+                                projects and scientific cooperations </li>
+                            <li>since 2019 epidat is developed in a scientific cooperation between Steinheim-Institute |
+                                Essen and Academy of Science and Literature | Mainz</li>
+                        </ul>
+                        <figure class="mfp-lightbox">
+                            <a href="resources/img/chart.png">
+                                <img src="resources/img/chart.png" alt="growth of epidat" />
+                            </a>
+                        </figure>
+            </div>
+            
+            <div class="step">
+                
+                <div class="row">
+                    <div class="six columns">
+                        <table class="x-small line-height-one-five down-25">
+                            <tr><th>FAIR</th><th>Epidat Research data are ...</th></tr>
+                            <tr><td><strong>F</strong>indable</td><td>provided for human readers and users via html5<br/>provided via a machine readable interface</td></tr>
+                            <tr><td><strong>A</strong>ccesible</td><td>provided in the standard format
+                                <a href="https://sourceforge.net/p/epidoc/wiki/Home/" target=" blank">EpiDoc: TEI XML
+                                    for Epigraphic Documents</a>
+                                for
+                                machine readable, system-independent, program-independent and structured  access (and widely used by  digital
+                                epigraphers)</td></tr>
+                            <tr><td><strong>I</strong>nteroperable</td><td>mapped to authority files, controlled vocabularies and thesauri to maintain interoperability</td></tr>
+                            <tr><td><strong>R</strong>e-usable</td><td>released online under an open Creative Commons Licence
+                                <a href="http://creativecommons.org/licences/by/4.0" target=" blank">  cc-by</a></td></tr>
+                            <tr><td></td><td>for more information see also <strong><a href="?info=howtoharvestepidatrecords&amp;release=beta&amp;lang=en">How to harvest epidat records</a></strong></td></tr>
+                        </table>
+                    </div>
+                    <div class="six columns">
+                        <figure class="mfp-lightbox even-left">
+                            <a href="resources/img/projects.png">
+                                <img src="resources/img/projects.png" alt="tobedone"/>
+                            </a>
+                        </figure>
+                        <p class="x-small centered up-25"><a href="http://www.steinheim-institut.de/cgi-bin/epidat?info=lab&amp;lang=en&amp;release=beta" target="_blank">projects</a></p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="step">
+                <div class="row">
+                    <div class="twalve columns box" style="height:480px">
+                        <video src="resources/img/RiR_Heiligenhaus.mp4" controls="controls"
+                            autoplay="autoplay" class="centered small" width="1024"></video>
+                    </div>
+                </div>
+                <p class="right x-small down-100"><a
+                    href="https://wiki.de.dariah.eu/display/RIRPUB/RiR"
+                    >RiR-project 2012-2015</a> | template: <a
+                        href="https://wiki.de.dariah.eu/display/RIRPUB/Template+zum+Erstellen+einer+SVG+Planskizze+in+Inkscape"
+                        >Howto make a dynamic map</a></p>
+            </div>
+            <div class="step" id="epidat">
+                <h2 class="red medium">Research Platform for Jewish Epigraphy</h2>
+                <div class="row">
+                    <div class="six columns">
+                        <table class="medium">
+                            <tr>
+                                <td><span class="highlight">places</span> – cemeteries</td>
+                                <td class="right">233</td>
+                            </tr>
+                            <tr>
+                                <td>headstones</td>
+                                <td class="right">43,816</td>
+                            </tr>
+                            <tr>
+                                <td>images</td>
+                                <td class="right">79,972 </td>
+                            </tr>
+                            <tr>
+                                <td><span class="highlight">names</span> – personal data
+                                    records</td>
+                                <td class="right">49,231</td>
+                            </tr>
+                            <tr>
+                                <td><span class="highlight">dates</span> (days)</td>
+                                <td class="right">29,490</td>
+                            </tr>
+                            <tr>
+                                <td>timespan</td>
+                                <td class="right" style="white-space: nowrap">1040-1951</td>
+                            </tr>
+                            <tr>
+                                <td>countries</td>
+                                <td class="right">6 <!--<br/>de nl cz lv pl es--></td>
+                            </tr>
+                        </table>
+                        <p class="x-small centered"><a
+                            href="http://www.steinheim-institut.de/cgi-bin/epidat?lang=de&amp;release=beta"
+                            target="_blank">start page</a> (beta, 2021-12-09)</p>
+                    </div>
+                    
+                    <div class="six columns box">
+                        <figure class="mfp-lightbox even-right">
+                            <a href="resources/img/epi_beta_small.png">
+                                <img src="resources/img/epi_beta_small.png" alt="epibeta startpage"
+                                />
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <!-- Hammerschlag -->
+                <div class="row">
+                    <div class="six columns">
+                        <figure class="mfp-lightbox">
+                            <a href="resources/img/2338_FN_0206040127.jpg">
+                                <img src="resources/img/2338_FN_0206040127.jpg" style="width:40rem"
+                                    alt="Hammerschlag" />
+                            </a>
+                        </figure>
+                        <p class="x-small up-25 centered">Hamburg <a
+                            href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha-2338&amp;lang=en&amp;release=beta" target="_blank"
+                            >hha-2338</a>, <a href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha-2338-1&amp;lang=en&amp;release=beta" target="_blank">David Hammerschlag</a> <br/>foto by Bert Sommer</p>
+                    </div>
+                    <div class="six columns">
+                        <dl class="even-left x-small down-25 line-height-one-five">
+                            <dt class="red">place of burial</dt>
+                            <dd class="even-left">Hamburg</dd>
+                            <dt class="red">name</dt>
+                            <dd class="even-left">David Hammerschlag</dd>
+                            <dt class="red">date_of_death</dt>
+                            <dd class="even-left">26.10.1686 | 18. Cheschvan 5447</dd>
+                            <dt class="red">place of origin</dt>
+                            <dd class="even-left">Hildesheim</dd>
+                            <dt class="red">intertextuality</dt>
+                            <dd class="even-left">Allusions on biblical David</dd>
+                            <dd class="even-left"> 2 Sam. 15:30 דוד עלה במעלה </dd>
+                            <dd class="even-left"> 1 Kings 2.1 ויקרבו ימי דוד למות</dd>
+                            <dt class="red">ornaments</dt>
+                            <dd class="even-left">palmette</dd>
+                            <dt class="red">symbols</dt>
+                            <dd>magen david | hammer</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="row">
+                    <div class="six columns">
+                        <figure class="mfp-lightbox">
+                            <a href="resources/img/Temp_Geobrowser.png">
+                                <img src="resources/img/Temp_Geobrowser.png" alt="Geobrowser" />
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="six columns">
+                        <h2 class="red">Geo-Browser</h2>
+                        <blockquote> A web-based tool for analyzing and visualizing space-time
+                            relations of data and source collections.</blockquote>
+                        <p class="x-small right">DARIAH-DE <a
+                                href="https://de.dariah.eu/en/web/guest/dienste-und-werkzeuge"
+                                target="_blank">Tools and Services</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="row">
+                    <div class="six columns">
+                        <figure class="mfp-lightbox">
+                            <a href="resources/img/DARIAH_DE_GEOBROWSER.png">
+                                <img src="resources/img/DARIAH_DE_GEOBROWSER.png" alt="geobrowser"
+                                 />
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="six columns">
+                        <h2 class="red">functionality</h2>
+                        <blockquote class="medium">The DARIAH-DE Geo-Browser allows a comparative
+                            visualization of several requests and facilitates the representation of
+                            data and their visualization in a correlation of geographic spatial
+                            relations at corresponding points of time and sequences. Thus,
+                            researchers can analyze space-time relations of data and collections of
+                            source material and simultaneously establish correlations between them. </blockquote>
+                        <p class="x-small right">
+                            <a href="https://de.dariah.eu/en/web/guest/geobrowser" target="_blank"
+                                >Description</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="step">
+                <div class="row">
+                    <div class="six columns">
+                        <figure class="mfp-lightbox">
+                            <a href="resources/img/gb_persons_smaller.png">
+                                <img src="resources/img/gb_persons_smaller.png" alt="persons">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="six columns">
+                        <h2 class="red">persons &amp; names</h2>
+                        <blockquote class="medium">entries of persons, which are documented in grave
+                            inscriptions, are visualized. This enables cross-inventory searches for
+                            persons and names in their spatio-temporal distribution. The
+                            descriptions are linked to the detailed epidat person entries. This
+                            application is especially suitable for genealogical and/or onomastic
+                            questions.</blockquote>
+                        <ul class="line-height-one-five small even-left down-50">
+                            <li>dataset with 37,937 person entries (created: 2021-12-07 19:03:43)<ul>
+                                    <li>name</li>
+                                    <li>sex</li>
+                                    <li>link to person entry in epidat</li></ul></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="six columns">
+                        <p class="x-small">Personal data and names on headstones <a
+                            href="http://www.steinheim-institut.de/cgi-bin/epidat?info=names&amp;show=listofperson&amp;lang=en&amp;release=beta"
+                            target="_blank">epidat</a></p>
+                    </div>
+                    <div class="six columns">
+                        <p class="x-small right">
+                            <a
+                                href="https://geobrowser.de.dariah.eu/embed/?csv1=http://www.steinheim-institut.de/daten/csv/epidat_names.csv"
+                                target="_blank">geobrowser (full view)</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="row">
+                    <div class="six columns">
+                        <figure class="mfp-lightbox">
+                            <a href="resources/img/gb_toponymes_small.png">
+                                <img src="resources/img/gb_toponymes_small.png" alt="toponyms">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="six columns">
+                        <h2 class="red">placenames | toponyme</h2>
+                        <blockquote>place names found in grave inscriptions are visualized. Hint:
+                            Place names can also be part of personal names (toponym). </blockquote>
+                        <ul class="line-height-one-five small even-left down-50">
+                            <li>dataset with 378 placenames</li>
+                            <li>without timeline</li>
+                            <li>Hebrew place names and toponyms are linked to the epidat full text
+                                search</li>
+                            <li>work in progress</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="six columns">
+                        <p class="x-small">Hebrew toponyms and placenames on headstones <a
+                            href="http://localhost/cgi-bin/epitest?info=space&amp;show=placenames&amp;lang=en&amp;release=beta"
+                            target="_blank">epidat</a></p>
+                    </div>
+                    <div class="six columns">
+                        <p class="x-small right">
+                            <a
+                                href="https://geobrowser.de.dariah.eu/embed/?csv=http://steinheim-institut.de/daten/csv/placenames.csv"
+                                target="_blank">geobrowser (full view)</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="row">
+                    <div class="six columns">
+                        <figure class="mfp-lightbox">
+                            <a href="resources/img/gb_symbols_smaller.png">
+                                <img src="resources/img/gb_symbols_smaller.png" alt="symbols">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="six columns">
+                        <h2 class="red">symbols</h2>
+                        <blockquote>visualization of the temporal-spatial distribution of symbols
+                            used on gravestones of Jewish cemeteries.</blockquote>
+                        <ul class="line-height-one-five small even-left down-50">
+                            <li>dataset with 3.449 records (created: 2015)</li>
+                            <li>possible research questions: search for <ul
+                                    class="line-height-one-five small even-left">
+                                    <li>
+                                        <code>Symbol: Magen David</code></li><li>
+                                        <code>Symbol: Schmetterling</code> (butterfly)</li><li>
+                                        <code>Symbol: Lilie</code> (lelies)</li>
+                                </ul></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="six columns">
+                        <p class="x-small">symbols on headstones <a
+                            href="http://www.steinheim-institut.de/cgi-bin/epidat?info=index&amp;anzeige=symbols&amp;lang=en&amp;release=beta#idx"
+                            target="_blank">epidat</a></p>
+                    </div>
+                    <div class="six columns">
+                        <p class="x-small right">
+                            <a
+                                href="https://geobrowser.de.dariah.eu/embed/?kml=http://steinheim-institut.de/daten/symbols.kml"
+                                target="_blank">geobrowser (full view)</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="row">
+                    <div class="six columns">
+                        <figure class="mfp-lightbox">
+                            <a href="resources/img/books_gb_small.png">
+                                <img src="resources/img/books_gb_small.png" alt="books">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="six columns">
+                        <h2 class="red">books</h2>
+                        <blockquote class="small">Particularly in the 18th and 19th centuries, it
+                            happens that epitaphs list books written by the deceased. From time to
+                            time, descendants also refer to books written by an ancestor. About 50
+                            books are listed and presented in the spatiotemporal visualisation in
+                            the DARIAH-DE Geo-Browser. </blockquote>
+                        <ul class="line-height-one-five small even-left down-50">
+                            <li>dataset with 44 records<ul><li>bookTitle</li>
+                                    <li>Bibliography of Hebrew Book ID</li>
+                                    <li>link to epidat record</li>
+                                    <li>date of headstone</li>
+                                    <li>role of deceased: author or descendant of
+                                author</li></ul></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="six columns">
+                        <p class="x-small">books mentioned on headstones <a
+                                href="http://www.steinheim-institut.de/cgi-bin/epidat?info=index&amp;anzeige=books&amp;lang=en&amp;release=beta#idx"
+                                target="_blank">epidat</a></p>
+                    </div>
+                    <div class="six columns">
+                        <p class="x-small right">
+                            <a
+                                href="https://geobrowser.de.dariah.eu/embed/?csv1=http://www.steinheim-institut.de/daten/epidat-bhb.csv"
+                                target="_blank">geobrowser (full view)</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="row">
+                    <div class="twalve columns">
+                        <h2 class="red">conclusion</h2>
+                        
+                        <ol class="line-height-one-five">
+                            <li>Databases, research repositories, Open Data and Open Access are important prerequisites for <ol class="line-height-one-five even-left"><li>the continuous development of digital modes of presentation</li><li>and digital tools.</li></ol></li>
+                            <li>The providing of data, the linking between repositories as well as the use and application of differentiated tools enables a deeper understanding of the cultural heritage.</li>
+                            <li>It does no harm, if the development of software for the past is embedded in ongoing research projects</li>                                                               
+                            <li class="substep">
+                                <figure class="mfp-lightbox down-25 even-left"><a href="resources/img/rufus_pollock.jpg"><img src="resources/img/rufus_pollock.jpg" style="width:25rem" alt="cookies"/></a></figure>
+                            </li></ol>
+                    </div>
+                </div>
+            </div>
+            </div>
+                <!-- jquery -->
+                <script src="vendor/jquery/jquery-1.11.0.min.js"></script>
+                <!-- unite gallery -->
+                <script src="vendor/unitegallery/js/unitegallery.min.js"></script>
+                <script src="vendor/unitegallery/themes/tiles/ug-theme-tiles.js"></script>
+                <script src="resources/js/unite.gallery.js"></script>
+                <!-- highlight -->
+                <script src="vendor/highlight/highlight.pack-9.3.0.js"></script>
+                <script>
+                    hljs.initHighlightingOnLoad();</script>
+                <script src="resources/js/hljs.linenumbering.js"></script>
+                <!-- swiper -->
+                <script src="vendor/swiper/swiper.min.js"></script>
+                <script>
+                    var swiper = new Swiper('.swiper-container', {
+                        pagination: '.swiper-pagination',
+                        paginationClickable: true,
+                        nextButton: '.swiper-button-next',
+                        prevButton: '.swiper-button-prev',
+                        spaceBetween: 30,
+                        hashnav: true
+                    });</script>
+                <!-- magnific popup -->
+                <script src="vendor/magnific-popup/jquery.magnific-popup.min-1.1.0.js"></script>
+                <script src="resources/js/magnific-popup.lightbox.js"></script>
+                <!-- impress.mod.js -->
+                <script src="vendor/impress/impress.fork.js"></script>
+                <script src="vendor/impress/impress-slidenum.js"></script>
+                <script>
+                    var obj = impress();
+                    obj.init();
+                    initSlideNo(obj);</script>
+                <!--<script>
+            var videoStep = document.getElementById("video-step");
+var video = document.getElementById("video");
+videoStep.addEventListener("impress:stepenter", function() {
+    video.play();
+}, false);
+videoStep.addEventListener("impress:stepleave", function() {
+    video.pause();
+}, false);
+        </script>-->
+                <script>
+                    var videos = document.getElementsByTagName("video");
+                    Array.prototype.forEach.call(videos, function (video) {
+                        var videoStep = video.closest(".step");
+                        videoStep.addEventListener("impress:stepenter", function () {
+                            video.play();
+                        },
+                        false);
+                        videoStep.addEventListener("impress:stepleave", function () {
+                            video.pause();
+                        },
+                        false);
+                    });</script>
+    </body>
+</html>
